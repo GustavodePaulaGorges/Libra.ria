@@ -8,19 +8,19 @@ export default class CategoriasApi {
         headers: {
           Accept: "application/json",
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY2ODQ2MjE2LCJpYXQiOjE2NjY4MzU0MTYsImp0aSI6ImUzZjk4OGY2ODRjNDQzMGNiNmE0NzhhOTAxMWU0MzY0IiwidXNlcl9pZCI6Mn0.7deGhvKRihvmqz6K0gf_WyfQlasjJZGLJwYOzGsLrn8",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3NTkxMDQwLCJpYXQiOjE2Njc1ODAyNDAsImp0aSI6ImU1MjI2MTFlNWMxODRjZjNhMTU1YjMxMTEzNDJiYTU4IiwidXNlcl9pZCI6MX0.pTQzFQ4LmqhEzUyzUvQt1fO5lVbaT4ojg8CnFF8hDf8 ",
         },
       },
       
     );
     return response.data;
-  }
+  } 
     async BuscarCategoria(id) {
       const response = await axios.get(`https://livrariacursodjang0.herokuapp.com/api/categorias/${id}`, {
         headers: {
           Accept: "application/json",
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY2ODQ2MjE2LCJpYXQiOjE2NjY4MzU0MTYsImp0aSI6ImUzZjk4OGY2ODRjNDQzMGNiNmE0NzhhOTAxMWU0MzY0IiwidXNlcl9pZCI6Mn0.7deGhvKRihvmqz6K0gf_WyfQlasjJZGLJwYOzGsLrn8",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3NTkxMDQwLCJpYXQiOjE2Njc1ODAyNDAsImp0aSI6ImU1MjI2MTFlNWMxODRjZjNhMTU1YjMxMTEzNDJiYTU4IiwidXNlcl9pZCI6MX0.pTQzFQ4LmqhEzUyzUvQt1fO5lVbaT4ojg8CnFF8hDf8 ",
         },
       },
 
@@ -30,14 +30,15 @@ export default class CategoriasApi {
 
     async AdicionarCategoria(categoria) {
       const response = await axios.post(
-        "https://livrariacursodjang0.herokuapp.com/api/categorias/", {
+        "https://livrariacursodjang0.herokuapp.com/api/categorias/", 
+        categoria,
+        {
           headers: {
             Accept: "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY2ODQ2MjE2LCJpYXQiOjE2NjY4MzU0MTYsImp0aSI6ImUzZjk4OGY2ODRjNDQzMGNiNmE0NzhhOTAxMWU0MzY0IiwidXNlcl9pZCI6Mn0.7deGhvKRihvmqz6K0gf_WyfQlasjJZGLJwYOzGsLrn8",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3NTkxMDQwLCJpYXQiOjE2Njc1ODAyNDAsImp0aSI6ImU1MjI2MTFlNWMxODRjZjNhMTU1YjMxMTEzNDJiYTU4IiwidXNlcl9pZCI6MX0.pTQzFQ4LmqhEzUyzUvQt1fO5lVbaT4ojg8CnFF8hDf8 ",
           },
         },
-        categoria
       );
       return response.data;
     }
@@ -47,7 +48,7 @@ export default class CategoriasApi {
         headers: {
           Accept: "application/json",
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY2ODQ2MjE2LCJpYXQiOjE2NjY4MzU0MTYsImp0aSI6ImUzZjk4OGY2ODRjNDQzMGNiNmE0NzhhOTAxMWU0MzY0IiwidXNlcl9pZCI6Mn0.7deGhvKRihvmqz6K0gf_WyfQlasjJZGLJwYOzGsLrn8",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3NTkxMDQwLCJpYXQiOjE2Njc1ODAyNDAsImp0aSI6ImU1MjI2MTFlNWMxODRjZjNhMTU1YjMxMTEzNDJiYTU4IiwidXNlcl9pZCI6MX0.pTQzFQ4LmqhEzUyzUvQt1fO5lVbaT4ojg8CnFF8hDf8 ",
           },
         },
       
@@ -57,14 +58,15 @@ export default class CategoriasApi {
 
     async AtualizarCategoria(categoria) {
       const response = await axios.put(
-        `https://livrariacursodjang0.herokuapp.com/api/categorias/${categoria.id}`, {
+        `https://livrariacursodjang0.herokuapp.com/api/categorias/${categoria.id}`,
+        categoria, 
+        {
           headers: {
             Accept: "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY2ODQ2MjE2LCJpYXQiOjE2NjY4MzU0MTYsImp0aSI6ImUzZjk4OGY2ODRjNDQzMGNiNmE0NzhhOTAxMWU0MzY0IiwidXNlcl9pZCI6Mn0.7deGhvKRihvmqz6K0gf_WyfQlasjJZGLJwYOzGsLrn8",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3NTkxMDQwLCJpYXQiOjE2Njc1ODAyNDAsImp0aSI6ImU1MjI2MTFlNWMxODRjZjNhMTU1YjMxMTEzNDJiYTU4IiwidXNlcl9pZCI6MX0.pTQzFQ4LmqhEzUyzUvQt1fO5lVbaT4ojg8CnFF8hDf8 ",
           },
         },
-        categoria
       );
       return response.data;
     }

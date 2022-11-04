@@ -1,6 +1,6 @@
 <template>
     <nav>
-        AAAAAAAAAAAAAAAAAAAAA
+        
     </nav>
 </template>
 <style>

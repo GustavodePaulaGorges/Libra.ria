@@ -53,6 +53,7 @@ export default {
     <h3 class="Title">Categorias:</h3>
     <div class="BoxInfo" v-for="categoria in categorias" :key="categoria.id">
       <div>{{ categoria.id }}
+      <button class="BtnEdit" @click="excluir(categoria)">Excluir</button>
       <RouterLink to="">{{ categoria.descricao }}</RouterLink>
       </div>
     </div>
@@ -66,6 +67,9 @@ export default {
   width: fit-content;
 }
 .wrapper{
+  padding: 1vh;
+}
+.container{
   padding: 1vh;
 }
 </style>
