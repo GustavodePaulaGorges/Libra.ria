@@ -53,8 +53,9 @@ export default {
     <h3 class="Title">Categorias:</h3>
     <div class="BoxInfo" v-for="categoria in categorias" :key="categoria.id">
       <div>{{ categoria.id }}
-      <button class="BtnEdit" @click="excluir(categoria)">Excluir</button>
-      <RouterLink to="">{{ categoria.descricao }}</RouterLink>
+      <RouterLink to="">{{ categoria.descricao }}</RouterLink> <br>
+      <button class="BtnEdit" @click="excluir(categoria)">Excluir</button> <br>
+      <button class="BtnEdit" @click="editar(categoria)">Editar</button>
       </div>
     </div>
   </div>
