@@ -9,7 +9,7 @@ export default class CategoriasApi {
         headers: {
           Accept: "application/json",
           Authorization: 
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODQ1NzM5LCJpYXQiOjE2Njc4MzQ5MzksImp0aSI6IjMxZjkyNDE1ZjMwMjQzZTViYTA5ZGU3YjA5NjA5NmY5IiwidXNlcl9pZCI6MX0.uNRdOSQ7fbhh7ZZnb45LAbr4ECS5Oa6CXwjZPDNXFoQ",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODU1NjMwLCJpYXQiOjE2Njc4NDQ4MzAsImp0aSI6IjAyY2FlNjQwYjExNzRhYWY4YWM2Njc3NDVjOWQwM2VkIiwidXNlcl9pZCI6MX0.Tq0qz0kWw4WnKkxE_AbqQxOq93HyeVGn_zCeuTRc9WE",
         },
       },
       
@@ -21,7 +21,7 @@ export default class CategoriasApi {
         headers: {
           Accept: "application/json",
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODQ1NzM5LCJpYXQiOjE2Njc4MzQ5MzksImp0aSI6IjMxZjkyNDE1ZjMwMjQzZTViYTA5ZGU3YjA5NjA5NmY5IiwidXNlcl9pZCI6MX0.uNRdOSQ7fbhh7ZZnb45LAbr4ECS5Oa6CXwjZPDNXFoQ",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODU1NjMwLCJpYXQiOjE2Njc4NDQ4MzAsImp0aSI6IjAyY2FlNjQwYjExNzRhYWY4YWM2Njc3NDVjOWQwM2VkIiwidXNlcl9pZCI6MX0.Tq0qz0kWw4WnKkxE_AbqQxOq93HyeVGn_zCeuTRc9WE",
         },
       },
 
@@ -37,7 +37,7 @@ export default class CategoriasApi {
           headers: {
             Accept: "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODQ1NzM5LCJpYXQiOjE2Njc4MzQ5MzksImp0aSI6IjMxZjkyNDE1ZjMwMjQzZTViYTA5ZGU3YjA5NjA5NmY5IiwidXNlcl9pZCI6MX0.uNRdOSQ7fbhh7ZZnb45LAbr4ECS5Oa6CXwjZPDNXFoQ",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODU1NjMwLCJpYXQiOjE2Njc4NDQ4MzAsImp0aSI6IjAyY2FlNjQwYjExNzRhYWY4YWM2Njc3NDVjOWQwM2VkIiwidXNlcl9pZCI6MX0.Tq0qz0kWw4WnKkxE_AbqQxOq93HyeVGn_zCeuTRc9WE",
           },
         },
       );
@@ -50,7 +50,7 @@ export default class CategoriasApi {
           headers: {
             Accept: "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODQ1NzM5LCJpYXQiOjE2Njc4MzQ5MzksImp0aSI6IjMxZjkyNDE1ZjMwMjQzZTViYTA5ZGU3YjA5NjA5NmY5IiwidXNlcl9pZCI6MX0.uNRdOSQ7fbhh7ZZnb45LAbr4ECS5Oa6CXwjZPDNXFoQ",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODU1NjMwLCJpYXQiOjE2Njc4NDQ4MzAsImp0aSI6IjAyY2FlNjQwYjExNzRhYWY4YWM2Njc3NDVjOWQwM2VkIiwidXNlcl9pZCI6MX0.Tq0qz0kWw4WnKkxE_AbqQxOq93HyeVGn_zCeuTRc9WE",
             },
           },
         
@@ -71,7 +71,7 @@ export default class CategoriasApi {
           headers: {
             Accept: "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODQ1NzM5LCJpYXQiOjE2Njc4MzQ5MzksImp0aSI6IjMxZjkyNDE1ZjMwMjQzZTViYTA5ZGU3YjA5NjA5NmY5IiwidXNlcl9pZCI6MX0.uNRdOSQ7fbhh7ZZnb45LAbr4ECS5Oa6CXwjZPDNXFoQ",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODU1NjMwLCJpYXQiOjE2Njc4NDQ4MzAsImp0aSI6IjAyY2FlNjQwYjExNzRhYWY4YWM2Njc3NDVjOWQwM2VkIiwidXNlcl9pZCI6MX0.Tq0qz0kWw4WnKkxE_AbqQxOq93HyeVGn_zCeuTRc9WE",
           },
         },
       );
