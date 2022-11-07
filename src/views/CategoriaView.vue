@@ -2,16 +2,19 @@
 import { RouterLink } from "vue-router";
 import CategoriasApi from "@/api/categorias.js";
 const categoriasApi = new CategoriasApi();
+
 export default {
   data() {
     return {
-      categoria: {},
       categorias: [],
+      categoria: {},
     };
   },
+
   async created() {
     this.categorias = await categoriasApi.BuscarTodasAsCategorias();
   },
+
   methods: {
       async salvar() {
         if (this.categoria.id) {
@@ -19,13 +22,16 @@ export default {
         } else {
           await categoriasApi.AdicionarCategoria(this.categoria);
         }
+
         this.categorias = await categoriasApi.BuscarTodasAsCategorias();
         this.categoria = {};
       },
+
       async excluir(categoria) {
         await categoriasApi.ExcluirCategoria(categoria.id);
         this.categorias = await categoriasApi.BuscarTodasAsCategorias();
       },
+
       editar(categoria) {
         Object.assign(this.categoria, categoria);
       },
@@ -34,6 +40,7 @@ export default {
 </script>
 
 <template>
+
   <div class="container">
     <div class="title">
       <h2>Gerenciamento de categorias</h2>
@@ -49,6 +56,8 @@ export default {
       <button @click="salvar" class="BtnSalvar">Adicionar</button>
     </div>
   </div>
+
+
   <div class="wrapper">
     <h3 class="Title">Categorias:</h3>
     <div class="BoxInfo" v-for="categoria in categorias" :key="categoria.id">
@@ -59,6 +68,8 @@ export default {
       </div>
     </div>
   </div>
+
+
 </template>
 <style>
 .BoxInfo {
