@@ -14,7 +14,7 @@ export default {
       livro: {},
       categoria: {},
       categorias: [],
-      autor: {},
+      // autores: {},
       autores: [],
     };
   },
@@ -65,11 +65,18 @@ export default {
         v-model="livro.titulo"
         @keyup.enter="salvar"
       />
+      <input
+        class="FormInput"
+        type="text"
+        placeholder="Editora"
+        v-model="livro.editora"
+        @keyup.enter="salvar"
+      />
 
       <input
         class="FormInput"
         type="text"
-        placeholder="Titulo"
+        placeholder="ISBN"
         v-model="livro.ISBN"
         @keyup.enter="salvar"
       />
@@ -77,7 +84,7 @@ export default {
       <input
         class="FormInput"
         type="text"
-        placeholder="Titulo"
+        placeholder="Preco"
         v-model="livro.preco"
         @keyup.enter="salvar"
       />
@@ -86,21 +93,27 @@ export default {
         <option 
           v-for="categoria of categorias"
           :key="categoria.id"
-          :value="categoria.descricao"
+          :value="categoria.id"
         >
           {{ categoria.descricao }}
         </option>
       </select>
-      <select class="FormInput" v-model="livro.autor">
+      <select multiple class="FormInput" v-model="livro.autores">
         <option 
           v-for="autor of autores"
           :key="autor.id"
-          :value="autor.nome"
+          :value="autor.id"
         >
           {{ autor.nome}}
         </option>
       </select>
-
+      <input
+        class="FormInput"
+        type="number"
+        placeholder=""
+        v-model="livro.quantidade"
+        @keyup.enter="salvar"
+      />
 
       <button @click="salvar" class="BtnSalvar">Adicionar</button>
     </div>
@@ -112,6 +125,9 @@ export default {
     <div class="BoxInfo" v-for="livro in livros" :key="livro.id">
       <div>
         {{ livro.id }} , {{ livro.titulo}} <br>
+        {{ livro.ISBN}} <br>
+        {{ livro.preco}} <br>
+        {{ livro.autor}} <br>
       <button class="BtnEdit" @click="excluir(livro)">Excluir</button> <br>
       <button class="BtnEdit" @click="editar(livro)">Editar</button>
       </div>

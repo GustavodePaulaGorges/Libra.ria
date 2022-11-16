@@ -9,7 +9,7 @@ export default class LivrosApi {
         headers: {
           Accept: "application/json",
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODU5MDQ0LCJpYXQiOjE2Njc4NDgyNDQsImp0aSI6IjY2ZDg4NDRiYmM4MTRlNjVhNDIzNmJkN2Q3MjM5YjQ1IiwidXNlcl9pZCI6MX0.rDwDRFKl8Z0YSCv62Fej6V7JiiuGS85-btSuVlj4zvA",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4NjA4MzgxLCJpYXQiOjE2Njg1OTc1ODEsImp0aSI6IjFiYzhlMDQyMzJiYzQ5Mzk4ZjZiNmUwMDBmNGI2YmI0IiwidXNlcl9pZCI6MX0.WqJWyqsO-zKCBxzjjMsZVFE9fSSo5YHrH-Dr_b8qO3c",
         },
       },
       
@@ -21,7 +21,7 @@ export default class LivrosApi {
         headers: {
           Accept: "application/json",
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODU5MDQ0LCJpYXQiOjE2Njc4NDgyNDQsImp0aSI6IjY2ZDg4NDRiYmM4MTRlNjVhNDIzNmJkN2Q3MjM5YjQ1IiwidXNlcl9pZCI6MX0.rDwDRFKl8Z0YSCv62Fej6V7JiiuGS85-btSuVlj4zvA",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4NjA4MzgxLCJpYXQiOjE2Njg1OTc1ODEsImp0aSI6IjFiYzhlMDQyMzJiYzQ5Mzk4ZjZiNmUwMDBmNGI2YmI0IiwidXNlcl9pZCI6MX0.WqJWyqsO-zKCBxzjjMsZVFE9fSSo5YHrH-Dr_b8qO3c",
         },
       },
 
@@ -37,7 +37,7 @@ export default class LivrosApi {
           headers: {
             Accept: "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODU5MDQ0LCJpYXQiOjE2Njc4NDgyNDQsImp0aSI6IjY2ZDg4NDRiYmM4MTRlNjVhNDIzNmJkN2Q3MjM5YjQ1IiwidXNlcl9pZCI6MX0.rDwDRFKl8Z0YSCv62Fej6V7JiiuGS85-btSuVlj4zvA",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4NjA4MzgxLCJpYXQiOjE2Njg1OTc1ODEsImp0aSI6IjFiYzhlMDQyMzJiYzQ5Mzk4ZjZiNmUwMDBmNGI2YmI0IiwidXNlcl9pZCI6MX0.WqJWyqsO-zKCBxzjjMsZVFE9fSSo5YHrH-Dr_b8qO3c",
           },
         },
       );
@@ -50,7 +50,7 @@ export default class LivrosApi {
             headers: {
               Accept: "application/json",
               Authorization:
-                "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODU5MDQ0LCJpYXQiOjE2Njc4NDgyNDQsImp0aSI6IjY2ZDg4NDRiYmM4MTRlNjVhNDIzNmJkN2Q3MjM5YjQ1IiwidXNlcl9pZCI6MX0.rDwDRFKl8Z0YSCv62Fej6V7JiiuGS85-btSuVlj4zvA",
+                "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4NjA4MzgxLCJpYXQiOjE2Njg1OTc1ODEsImp0aSI6IjFiYzhlMDQyMzJiYzQ5Mzk4ZjZiNmUwMDBmNGI2YmI0IiwidXNlcl9pZCI6MX0.WqJWyqsO-zKCBxzjjMsZVFE9fSSo5YHrH-Dr_b8qO3c",
               },
             },
           
@@ -71,7 +71,7 @@ export default class LivrosApi {
           headers: {
             Accept: "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3ODU5MDQ0LCJpYXQiOjE2Njc4NDgyNDQsImp0aSI6IjY2ZDg4NDRiYmM4MTRlNjVhNDIzNmJkN2Q3MjM5YjQ1IiwidXNlcl9pZCI6MX0.rDwDRFKl8Z0YSCv62Fej6V7JiiuGS85-btSuVlj4zvA",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4NjA4MzgxLCJpYXQiOjE2Njg1OTc1ODEsImp0aSI6IjFiYzhlMDQyMzJiYzQ5Mzk4ZjZiNmUwMDBmNGI2YmI0IiwidXNlcl9pZCI6MX0.WqJWyqsO-zKCBxzjjMsZVFE9fSSo5YHrH-Dr_b8qO3c",
           },
         },
       );
