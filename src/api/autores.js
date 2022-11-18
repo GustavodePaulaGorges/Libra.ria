@@ -9,7 +9,7 @@ export default class AutoresApi {
         headers: {
           Accept: "application/json",
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4NjA4MzgxLCJpYXQiOjE2Njg1OTc1ODEsImp0aSI6IjFiYzhlMDQyMzJiYzQ5Mzk4ZjZiNmUwMDBmNGI2YmI0IiwidXNlcl9pZCI6MX0.WqJWyqsO-zKCBxzjjMsZVFE9fSSo5YHrH-Dr_b8qO3c",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODIxMTQ3LCJpYXQiOjE2Njg4MTAzNDcsImp0aSI6IjBhYzlmN2RhMWYxODQ0YWY5ODhmMGM1ZmI2Yjk2ZjQ4IiwidXNlcl9pZCI6MX0.KmVDy80XUFuFYYJUBcxttSEROQj-uSY49XL6rzv1N5Q",
         },
       },
       
@@ -21,7 +21,7 @@ export default class AutoresApi {
         headers: {
           Accept: "application/json",
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4NjA4MzgxLCJpYXQiOjE2Njg1OTc1ODEsImp0aSI6IjFiYzhlMDQyMzJiYzQ5Mzk4ZjZiNmUwMDBmNGI2YmI0IiwidXNlcl9pZCI6MX0.WqJWyqsO-zKCBxzjjMsZVFE9fSSo5YHrH-Dr_b8qO3c",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODIxMTQ3LCJpYXQiOjE2Njg4MTAzNDcsImp0aSI6IjBhYzlmN2RhMWYxODQ0YWY5ODhmMGM1ZmI2Yjk2ZjQ4IiwidXNlcl9pZCI6MX0.KmVDy80XUFuFYYJUBcxttSEROQj-uSY49XL6rzv1N5Q",
         },
       },
 
@@ -37,7 +37,7 @@ export default class AutoresApi {
           headers: {
             Accept: "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4NjA4MzgxLCJpYXQiOjE2Njg1OTc1ODEsImp0aSI6IjFiYzhlMDQyMzJiYzQ5Mzk4ZjZiNmUwMDBmNGI2YmI0IiwidXNlcl9pZCI6MX0.WqJWyqsO-zKCBxzjjMsZVFE9fSSo5YHrH-Dr_b8qO3c",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODIxMTQ3LCJpYXQiOjE2Njg4MTAzNDcsImp0aSI6IjBhYzlmN2RhMWYxODQ0YWY5ODhmMGM1ZmI2Yjk2ZjQ4IiwidXNlcl9pZCI6MX0.KmVDy80XUFuFYYJUBcxttSEROQj-uSY49XL6rzv1N5Q",
           },
         },
       );
@@ -50,7 +50,7 @@ export default class AutoresApi {
           headers: {
             Accept: "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4NjA4MzgxLCJpYXQiOjE2Njg1OTc1ODEsImp0aSI6IjFiYzhlMDQyMzJiYzQ5Mzk4ZjZiNmUwMDBmNGI2YmI0IiwidXNlcl9pZCI6MX0.WqJWyqsO-zKCBxzjjMsZVFE9fSSo5YHrH-Dr_b8qO3c",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODIxMTQ3LCJpYXQiOjE2Njg4MTAzNDcsImp0aSI6IjBhYzlmN2RhMWYxODQ0YWY5ODhmMGM1ZmI2Yjk2ZjQ4IiwidXNlcl9pZCI6MX0.KmVDy80XUFuFYYJUBcxttSEROQj-uSY49XL6rzv1N5Q",
             },
           },
         
@@ -71,7 +71,7 @@ export default class AutoresApi {
           headers: {
             Accept: "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4NjA4MzgxLCJpYXQiOjE2Njg1OTc1ODEsImp0aSI6IjFiYzhlMDQyMzJiYzQ5Mzk4ZjZiNmUwMDBmNGI2YmI0IiwidXNlcl9pZCI6MX0.WqJWyqsO-zKCBxzjjMsZVFE9fSSo5YHrH-Dr_b8qO3c",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODIxMTQ3LCJpYXQiOjE2Njg4MTAzNDcsImp0aSI6IjBhYzlmN2RhMWYxODQ0YWY5ODhmMGM1ZmI2Yjk2ZjQ4IiwidXNlcl9pZCI6MX0.KmVDy80XUFuFYYJUBcxttSEROQj-uSY49XL6rzv1N5Q",
           },
         },
       );
