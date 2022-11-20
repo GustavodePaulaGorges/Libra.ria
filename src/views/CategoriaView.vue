@@ -45,6 +45,7 @@ export default {
     <div class="title">
       <h2>Gerenciamento de categorias</h2>
     </div>
+
     <div class="FormBox">
       <input
         class="FormInput"
@@ -53,35 +54,27 @@ export default {
         v-model="categoria.descricao"
         @keyup.enter="salvar"
       />
+
       <button @click="salvar" class="BtnSalvar">Adicionar</button>
+
     </div>
   </div>
 
 
   <div class="wrapper">
-    <h3 class="Title">Categorias:</h3>
+    <h2 class="Title">Categorias:</h2>
     <div class="BoxInfo" v-for="categoria in categorias" :key="categoria.id">
-      <div>{{ categoria.id }}
-      <RouterLink to="">{{ categoria.descricao }}</RouterLink> <br>
+      <p class="livroinfo">
+        {{categoria.id}}
+        <h1>{{categoria.descricao}}</h1>
+      </p>
       <button class="BtnEdit" @click="excluir(categoria)">Excluir</button> <br>
       <button class="BtnEdit" @click="editar(categoria)">Editar</button>
       </div>
     </div>
-  </div>
 
 
 </template>
 <style>
-.BoxInfo {
-  float: left;
-  height: fit-content;
-  padding: 2vh;
-  width: fit-content;
-}
-.wrapper{
-  padding: 1vh;
-}
-.container{
-  padding: 1vh;
-}
 </style>
+

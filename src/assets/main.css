@@ -4,15 +4,83 @@
   font-weight: normal;
 }
 
-a,
-.green {
+.HeadLinks{
   text-decoration: none;
-  color: #5B223F;
-  transition: 0.4s;
+  color: #ffffff;
+  transition: 0.3s;
+  font-weight: bold;
+  padding: 1vh;
+  margin-left: 1vh;
 }
 
 @media (hover: hover) {
-  a:hover {
-    background-color: #d8007049;
+  .HeadLinks:hover {
+    box-shadow: inset 0 0 10px #00000049;
+    outline: #83305c 1px solid ;
   }
 }
+.wrapper{
+  width: 75%;
+  padding: 2vh;
+  float: right;
+  border-left: rgb(192, 192, 192) solid 2px;
+  transition: 0.3s;
+}
+.BoxInfo{
+  width: 30%;
+}
+
+.FormInput, .BtnSalvar{
+  width:90%;
+  padding:10px;
+  margin:10px 0;
+  border: 2px solid rgb(192, 192, 192);
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:10px;
+}
+.BtnEdit{
+  background-color: #5b223f;
+  color: #EAEAEA;
+  padding:0.5vh;
+  width: 50%;
+  border-radius: 10px;
+  border: 2px solid rgb(192, 192, 192);
+}
+.BtnSalvar{ 
+  background-color: #5b223f;
+  color: #EAEAEA;
+  padding:2vh;
+}
+.BtnSalvar:hover, .BtnEdit:hover{
+  filter: brightness(150%);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.container{
+  width: 20%;
+  position: fixed;
+  float: left;
+}
+.SelectText{
+  margin: 0.5vh 0 -0.5vh 0.5vh;
+  font-size: small;
+  color: rgb(59, 59, 59);
+}
+.BookCover{
+  height: 100%;
+  width: 100%;
+
+}
+h3{
+  color: rgb(114, 114, 114);
+  line-height: 0.5vh;
+}
+h1{
+  line-height: 3vh;
+  color: #83305c;
+
+}
+.livroinfo{
+  line-height: 0.1vh; 
+}
+

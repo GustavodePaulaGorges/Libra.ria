@@ -1,5 +1,4 @@
 <script>
-import { RouterLink } from "vue-router";
 import AutoresApi from "@/api/autores.js";
 const autoresApi = new AutoresApi();
 
@@ -62,7 +61,12 @@ export default {
     <h3 class="Title">Autores:</h3>
     <div class="BoxInfo" v-for="autor in autores" :key="autor.id">
       <div>
-        {{ autor.id }} , {{ autor.nome}} <br>
+        <p class="livroinfo">
+          {{autor.id}}
+          <h1>
+            {{autor.nome}}
+          </h1>
+        </p>
       <button class="BtnEdit" @click="excluir(autor)">Excluir</button> <br>
       <button class="BtnEdit" @click="editar(autor)">Editar</button>
       </div>
