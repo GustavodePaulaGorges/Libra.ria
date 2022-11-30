@@ -19,8 +19,8 @@ const router = createRouter({
       component: AutoresView,
     },
     {
-      path: "/",
-      name: "home",
+      path: "/home",
+      name: "home", 
       component: HomeView,
     },
     {
@@ -29,8 +29,8 @@ const router = createRouter({
       component: EditoraView,
     },
     {
-      path: "/login",
-      name: "login",
+      path: "/",
+      name: "Login",
       component: LoginView,
     },
   ],

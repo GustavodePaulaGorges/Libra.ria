@@ -1,3 +1,7 @@
+<script setup>
+import Navbar from '@/components/navbar.vue';
+</script>
+
 <script>
 import { RouterLink } from "vue-router";
 import LivrosApi from "@/api/livros.js";
@@ -54,7 +58,12 @@ export default {
 };
 </script>
 
+
+
 <template>
+
+  <Navbar />
+  
   <div>
 
     <div class="container">
@@ -85,6 +94,14 @@ export default {
           type="number"
           placeholder="Preco"
           v-model="livro.preco"
+          @keyup.enter="salvar"
+        />
+
+        <input 
+          class="FormInput"
+          placeholder="Link da Capa"
+          type="text"
+          v-model="livro.capa"
           @keyup.enter="salvar"
         />
 
@@ -140,6 +157,7 @@ export default {
     <div class="BoxInfo" v-for="livro in livros" :key="livro.id">
         <img class="BookCover" src="https://edit.org/photos/images/cat/book-covers-big-2019101610.jpg-1300.jpg" alt="pog">
         <p class="livroinfo">
+          {{ livro.capa }}
           id: {{ livro.id }}
           <h1>{{ livro.titulo }}</h1>
           <h3>{{ livro.autores.join(" ") }}</h3>

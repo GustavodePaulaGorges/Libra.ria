@@ -1,3 +1,7 @@
+<script setup>
+import Navbar from '@/components/navbar.vue';
+</script>
+
 <script>
 import EditorasApi from "@/api/editoras.js";
 const editorasApi = new EditorasApi();
@@ -39,6 +43,8 @@ export default {
 </script>
 
 <template>
+
+  <Navbar />
 
   <div class="container">
     <div class="title">

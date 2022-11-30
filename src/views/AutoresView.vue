@@ -1,3 +1,7 @@
+<script setup>
+import Navbar from '@/components/navbar.vue';
+</script>
+
 <script>
 import AutoresApi from "@/api/autores.js";
 const autoresApi = new AutoresApi();
@@ -39,6 +43,8 @@ export default {
 </script>
 
 <template>
+
+  <Navbar />
 
   <div class="container">
     <div class="title">

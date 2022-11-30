@@ -1,3 +1,7 @@
+<script setup>
+import Navbar from '@/components/navbar.vue';
+</script>
+
 <script>
 import { RouterLink } from "vue-router";
 import CategoriasApi from "@/api/categorias.js";
@@ -40,6 +44,8 @@ export default {
 </script>
 
 <template>
+
+  <Navbar />
 
   <div class="container">
     <div class="title">

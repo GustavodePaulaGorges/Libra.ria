@@ -10,5 +10,6 @@ export const useAuthStore = defineStore("auth", () => {
     token.value = data.access;
   }
 
+
   return { token, login };
 });
