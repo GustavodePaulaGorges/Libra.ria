@@ -83,7 +83,7 @@ export default {
 
         <input
           class="FormInput"
-          type="text"
+          type="number"
           placeholder="ISBN"
           v-model="livro.ISBN"
           @keyup.enter="salvar"
@@ -101,7 +101,7 @@ export default {
           class="FormInput"
           placeholder="Link da Capa"
           type="text"
-          v-model="livro.capa"
+          v-model="livro.imagem"
           @keyup.enter="salvar"
         />
 
@@ -155,14 +155,14 @@ export default {
   <div class="wrapper">
 
     <div class="BoxInfo" v-for="livro in livros" :key="livro.id">
-        <img class="BookCover" src="https://edit.org/photos/images/cat/book-covers-big-2019101610.jpg-1300.jpg" alt="pog">
+        <img v-bind:src="livro.imagem" class="BookCover">
         <p class="livroinfo">
-          {{ livro.capa }}
           id: {{ livro.id }}
           <h1>{{ livro.titulo }}</h1>
           <h3>{{ livro.autores.join(" ") }}</h3>
           
         </p>
+        
         
         
         
