@@ -158,7 +158,11 @@ export default {
         <img v-bind:src="livro.imagem" class="BookCover">
         <p class="livroinfo">
           id: {{ livro.id }}
-          <h1>{{ livro.titulo }}</h1>
+          <h1>
+            <RouterLink v-bind:to="livro.titulo">
+            {{ livro.titulo}}
+            </RouterLink>
+          </h1>
           <h3>{{ livro.autores.join(" ") }}</h3>
           
         </p>
