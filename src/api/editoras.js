@@ -4,7 +4,7 @@ import axios from "axios";
 export default class EditorasApi {
   async BuscarTodasAsEditoras() {
     const response = await axios.get(
-      "https://livrariacursodjang0.herokuapp.com/api/editoras/",
+      "https://livrariacursodjango-production.up.railway.app/api/editoras/",
       {
         headers: {
           Accept: "application/json",
@@ -17,7 +17,7 @@ export default class EditorasApi {
     return response.data;
   } 
     async BuscarEditora(id) {
-      const response = await axios.get(`https://livrariacursodjang0.herokuapp.com/api/editoras/${id}`, {
+      const response = await axios.get(`https://livrariacursodjango-production.up.railway.app/api/editoras/${id}`, {
         headers: {
           Accept: "application/json",
           Authorization:
@@ -31,7 +31,7 @@ export default class EditorasApi {
 
     async AdicionarEditora(editora) {
       const response = await axios.post(
-        "https://livrariacursodjang0.herokuapp.com/api/editoras/", 
+        "https://livrariacursodjango-production.up.railway.app/api/editoras/", 
         editora,
         {
           headers: {
@@ -46,7 +46,7 @@ export default class EditorasApi {
 
     async ExcluirEditora(id) {
       try {
-        const response = await axios.delete(`https://livrariacursodjang0.herokuapp.com/api/editora/${id}`, {
+        const response = await axios.delete(`https://livrariacursodjango-production.up.railway.app/api/editora/${id}`, {
           headers: {
             Accept: "application/json",
             Authorization:
@@ -65,7 +65,7 @@ export default class EditorasApi {
 
     async AtualizarEditora(editora) {
       const response = await axios.put(
-        `https://livrariacursodjang0.herokuapp.com/api/editoras/${editora.id}/`,
+        `https://livrariacursodjango-production.up.railway.app/api/editoras/${editora.id}/`,
         editora, 
         {
           headers: {

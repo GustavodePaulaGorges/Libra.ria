@@ -4,7 +4,7 @@ import axios from "axios";
 export default class AutoresApi {
   async BuscarTodosOsAutores() {
     const response = await axios.get(
-      "https://livrariacursodjang0.herokuapp.com/api/autores/",
+      "https://livrariacursodjango-production.up.railway.app/api/autores/",
       {
         headers: {
           Accept: "application/json",
@@ -17,7 +17,7 @@ export default class AutoresApi {
     return response.data;
   } 
     async BuscarAutor(id) {
-      const response = await axios.get(`https://livrariacursodjang0.herokuapp.com/api/autores/${id}`, {
+      const response = await axios.get(`https://livrariacursodjango-production.up.railway.app/api/autores/${id}`, {
         headers: {
           Accept: "application/json",
           Authorization:
@@ -31,7 +31,7 @@ export default class AutoresApi {
 
     async AdicionarAutor(autor) {
       const response = await axios.post(
-        "https://livrariacursodjang0.herokuapp.com/api/autores/", 
+        "https://livrariacursodjango-production.up.railway.app/api/autores/", 
         autor,
         {
           headers: {
@@ -46,7 +46,7 @@ export default class AutoresApi {
 
     async ExcluirAutor(id) {
       try {
-        const response = await axios.delete(`https://livrariacursodjang0.herokuapp.com/api/autores/${id}`, {
+        const response = await axios.delete(`https://livrariacursodjango-production.up.railway.app/api/autores/${id}`, {
           headers: {
             Accept: "application/json",
             Authorization:
@@ -65,7 +65,7 @@ export default class AutoresApi {
 
     async AtualizarAutor(autor) {
       const response = await axios.put(
-        `https://livrariacursodjang0.herokuapp.com/api/autores/${autor.id}/`,
+        `https://livrariacursodjango-production.up.railway.app/api/autores/${autor.id}/`,
         autor, 
         {
           headers: {

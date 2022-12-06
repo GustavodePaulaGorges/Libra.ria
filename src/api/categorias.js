@@ -4,7 +4,7 @@ import axios from "axios";
 export default class CategoriasApi {
   async BuscarTodasAsCategorias() {
     const response = await axios.get(
-      "https://livrariacursodjang0.herokuapp.com/api/categorias/",
+      "https://livrariacursodjango-production.up.railway.app/api/categorias/",
       {
         headers: {
           Accept: "application/json",
@@ -17,7 +17,7 @@ export default class CategoriasApi {
     return response.data;
   } 
     async BuscarCategoria(id) {
-      const response = await axios.get(`https://livrariacursodjang0.herokuapp.com/api/categorias/${id}`, {
+      const response = await axios.get(`https://livrariacursodjango-production.up.railway.app/api/categorias/${id}`, {
         headers: {
           Accept: "application/json",
           Authorization:
@@ -31,7 +31,7 @@ export default class CategoriasApi {
 
     async AdicionarCategoria(categoria) {
       const response = await axios.post(
-        "https://livrariacursodjang0.herokuapp.com/api/categorias/", 
+        "https://livrariacursodjango-production.up.railway.app/api/categorias/", 
         categoria,
         {
           headers: {
@@ -46,7 +46,7 @@ export default class CategoriasApi {
 
     async ExcluirCategoria(id) {
       try {
-        const response = await axios.delete(`https://livrariacursodjang0.herokuapp.com/api/categorias/${id}`, {
+        const response = await axios.delete(`https://livrariacursodjango-production.up.railway.app/api/categorias/${id}`, {
           headers: {
             Accept: "application/json",
             Authorization:
@@ -65,7 +65,7 @@ export default class CategoriasApi {
 
     async AtualizarCategoria(categoria) {
       const response = await axios.put(
-        `https://livrariacursodjang0.herokuapp.com/api/categorias/${categoria.id}/`,
+        `https://livrariacursodjango-production.up.railway.app/api/categorias/${categoria.id}/`,
         categoria, 
         {
           headers: {
