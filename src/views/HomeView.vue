@@ -159,8 +159,8 @@ export default {
         <p class="livroinfo">
           id: {{ livro.id }}
           <h1>
-            <RouterLink v-bind:to="livro.titulo">
-            {{ livro.titulo}}
+            <RouterLink :to="`/info/${livro.id}`">
+              {{ livro.titulo }}
             </RouterLink>
           </h1>
           <h3>{{ livro.autores.join(" ") }}</h3>
