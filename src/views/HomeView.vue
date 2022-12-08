@@ -61,9 +61,6 @@ export default {
 
 
 <template>
-
-  <Navbar />
-  
   <div>
 
     <div class="container">
@@ -150,6 +147,9 @@ export default {
 
   </div>
 
+  <Navbar class="NavHome" />
+
+  
   
 
   <div class="wrapper">
