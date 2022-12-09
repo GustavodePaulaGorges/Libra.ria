@@ -51,7 +51,5 @@ export default {
 </template>
 
 <style>
-/* body {
-  background-image: url(https://media.istockphoto.com/id/470721440/vector/books-seamless-pattern.jpg?b=1&s=612x612&w=0&k=20&c=GAx0qBqdBzVbumOP6jmCHfy0nItwbUpXQdM6Gsbbk0k=);
-} */
+
 </style>
