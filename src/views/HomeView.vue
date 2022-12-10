@@ -125,7 +125,7 @@ export default {
         </select>
 
         <p class="SelectText">Autores:</p>
-        <select multiple class="FormInput" v-model="livro.autores">
+        <select multiple class="FormInput multi" v-model="livro.autores">
           <option v-for="autor of autores" :key="autor.id" :value="autor.id">
             {{ autor.nome }}
           </option>

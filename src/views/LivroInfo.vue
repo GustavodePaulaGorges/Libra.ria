@@ -28,12 +28,34 @@ export default {
 
   async created() {
     this.livro = await livrosApi.BuscarLivro(this.id);
-
+    this.livros = await livrosApi.BuscarTodosOsLivros();
     this.categorias = await categoriasApi.BuscarTodasAsCategorias();
     this.autores = await autoresApi.BuscarTodosOsAutores();
     this.editoras = await editorasApi.BuscarTodasAsEditoras();
   },
+  methods: {
+    async salvar() {
+      if (this.livro.id) {
+        await livrosApi.AtualizarLivro(this.livro);
+      } else {
+        await livrosApi.AdicionarLivro(this.livro);
+      }
+      this.categorias = await categoriasApi.BuscarTodasAsCategorias();
+      this.autores = await autoresApi.BuscarTodosOsAutores();
+      this.livros = await livrosApi.BuscarTodosOsLivros();
+      this.editoras = await editorasApi.BuscarTodasAsEditoras();
+      this.livro = {};
+    },
 
+    async excluir(livro) {
+      await livrosApi.ExcluirLivro(livro.id);
+      this.livros = await livrosApi.BuscarTodosOsLivros();
+    },
+
+    editar(livro) {
+      Object.assign(this.livro, livro);
+    },
+  },
 };
 </script>
 
@@ -64,10 +86,22 @@ export default {
       <div class="BookBuy">
         <h3>Quantidade no estoque: {{livro.quantidade}}</h3>
         <h1 class="price"> R${{livro.preco}}</h1>
-        <button>Comprar!</button>
+        <button class="BuyBTN">Comprar!</button>
       </div>
     </div>
  </div>
+ <div class="wrapper">
+
+<!-- <div v-for="book in livros" :key="book.id">
+    <div v-if="book.autores = livro.categoria">
+      <p class="livroinfo">
+        id: {{ book.id }} 
+      
+      </p>    
+    </div>
+</div> -->
+
+</div>
 </template>
 
 <style>
@@ -102,5 +136,24 @@ export default {
 .price{
   color: brown;
   font-family: 'Fazeta-BoldItalicCaption';
+
 }
+.BuyBTN{
+  width: 9vh;
+  height: 3vh;
+  background-color: #5b223f;
+  color: white;
+  font-weight: bold;
+  border-radius: 4vh;
+  border: none;
+  transition-duration: 0.2s;
+  outline: 2px solid rgb(134, 134, 134);
+}
+.BuyBTN:hover{
+  width: 10vh;
+  box-shadow: inset 0 0 10px #000000a2;
+  outline: 2px solid rgb(63, 63, 63);
+  cursor: pointer;
+}
+
 </style>
