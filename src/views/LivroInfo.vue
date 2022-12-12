@@ -90,21 +90,46 @@ export default {
       </div>
     </div>
  </div>
- <div class="wrapper">
+ 
+ <!-- <div>
+  <h2  class="RelatedTitle">Outros livros da categoria {{livro.categoria}}!</h2>
+  <div class="RelatedList">
 
-<!-- <div v-for="book in livros" :key="book.id">
-    <div v-if="book.autores = livro.categoria">
-      <p class="livroinfo">
-        id: {{ book.id }} 
-      
-      </p>    
+    <div v-for="book in livros" :key="book.id" class="BoxInfo a">
+        <div v-if="book.categoria = livro.categoria">
+          <img v-bind:src="book.imagem" class="RelatedIMG">
+        </div>
     </div>
-</div> -->
+ </div>
+ </div>
 
+<div>
+  <div class="RelatedList">
+  <h2>Dos mesmos autores {{livro.autores.join(" ")}}!</h2>
+    <div v-for="book in livros" :key="book.id" class="BoxInfo">
+        <div v-if="book.categoria = livro.categoria">
+          <img v-bind:src="book.imagem" class="RelatedIMG">
+        </div>
+    </div>
 </div>
+</div> -->
 </template>
 
 <style>
+
+.RelatedTitle{
+  text-align: center;
+}
+.RelatedList{
+  width: 100%;
+  margin-top: 5vh;
+  padding: 2vh;
+  outline: 1px black solid;
+  display: flex;
+}
+.RelatedIMG{
+  height: 20vh;
+}
 .ExpandedInfo{
   float: left;
   padding-left: 1vh;
